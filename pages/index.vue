@@ -1,7 +1,18 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>Test111</div>
+  <div>
+    <IndexMainBackground />
+    <IndexMain class="screen-block" />
+    <IndexNews class="screen-block top-block" />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.top-block {
+  margin-top: 7em;
+}
+.screen-block {
+  padding: 40px;
+}
+</style>

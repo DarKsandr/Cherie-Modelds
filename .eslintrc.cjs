@@ -10,10 +10,10 @@ module.exports = {
     '@vue/eslint-config-airbnb',
   ],
   rules: {
-    // override/add rules settings here, such as:
-    // 'vue/no-unused-vars': 'error'
     'no-undef': 'off',
     'vue/multi-word-component-names': 'off',
     'prettier/prettier': ['error', { singleQuote: true }],
+    'vue/html-self-closing': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
   },
 };
