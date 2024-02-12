@@ -14,4 +14,10 @@
   height: 100vh;
   filter: brightness(60%);
 }
+@media (max-width: 480px) {
+  .main-bg {
+    background-size: cover;
+    background-position: 25%;
+  }
+}
 </style>

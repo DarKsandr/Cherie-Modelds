@@ -15,5 +15,6 @@ module.exports = {
     'prettier/prettier': ['error', { singleQuote: true }],
     'vue/html-self-closing': 'off',
     'vue/singleline-html-element-content-newline': 'off',
+    'import/no-unresolved': 'off',
   },
 };

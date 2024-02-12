@@ -1,40 +1,43 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const isOpen = ref(false);
+const openMenu = () => {
+  isOpen.value = true;
+};
+const closeMenu = () => {
+  isOpen.value = false;
+};
+watch(isOpen, (value) => {
+  document.documentElement.style.overflowY = value ? 'hidden' : 'auto';
+});
+</script>
 
 <template>
   <div class="flex justify-between items-center">
-    <img src="/assets/svg/logo.svg" alt="Logo" />
-    <div class="region-link">RU</div>
-    <div class="flex gap-24 w-2/3">
-      <div class="link">Модели</div>
-      <div class="link">Стать моделью</div>
-      <div class="link">О нас</div>
-      <div class="link">Контакты</div>
-      <div class="link">FAQ</div>
-    </div>
-    <div class="f-link">Fallen Greatness</div>
+    <IndexLogo />
+    <IndexLinkRegion class="header-link" />
+    <IndexLinkCommon class="header-link flex gap-24 w-2/3" />
+    <IndexLinkFallen class="header-link" />
+    <img
+      src="/assets/svg/menu.svg"
+      alt="Menu"
+      class="menu"
+      aria-hidden="true"
+      @click="openMenu"
+    />
   </div>
+  <IndexMainMobile v-if="isOpen" @close="closeMenu" />
 </template>
 
 <style scoped>
-.link {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0;
-  text-align: left;
+.menu {
+  display: none;
 }
-.f-link {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0;
-  text-align: left;
-}
-.region-link {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0;
-  text-align: left;
+@media (max-width: 480px) {
+  .header-link {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
 }
 </style>

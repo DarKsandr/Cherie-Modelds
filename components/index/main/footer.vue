@@ -3,12 +3,14 @@
 <template>
   <div class="flex justify-between">
     <div>Международное модельное агенство</div>
-    <div class="flex gap-10">
-      <div>Vkontakte</div>
-      <div>Instagram</div>
-      <div>Telegram</div>
-    </div>
+    <IndexSocialNetwork class="social-network flex gap-10" />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media (max-width: 480px) {
+  .social-network {
+    display: none;
+  }
+}
+</style>
