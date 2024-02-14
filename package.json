@@ -18,7 +18,8 @@
     "@vue/eslint-config-airbnb": "^8.0.0",
     "nuxt": "^3.10.1",
     "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vue3-carousel": "^0.3.1"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",

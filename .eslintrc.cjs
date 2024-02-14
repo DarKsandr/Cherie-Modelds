@@ -16,5 +16,6 @@ module.exports = {
     'vue/html-self-closing': 'off',
     'vue/singleline-html-element-content-newline': 'off',
     'import/no-unresolved': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };
