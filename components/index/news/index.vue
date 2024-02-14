@@ -13,7 +13,7 @@ const rightSlide = () => {
 <template>
   <div>
     <div class="flex justify-between">
-      <div class="h1">Новости</div>
+      <TypographyHTag>Новости</TypographyHTag>
       <div class="flex gap-7">
         <button type="button" @click="leftSlide">
           <img src="/assets/svg/arrow-black-left.svg" alt="Arrow Left" />
@@ -28,12 +28,4 @@ const rightSlide = () => {
   </div>
 </template>
 
-<style scoped>
-.h1 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: -0.04em;
-  text-align: left;
-}
-</style>
+<style scoped></style>
