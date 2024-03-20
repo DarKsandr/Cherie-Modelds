@@ -14,22 +14,6 @@ services:
     networks:
       - common
 
-  mysql:
-    image: mysql:8
-    container_name: ${PROJECT_NAME}_mysql
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE: ${PROJECT_NAME}
-    volumes:
-      - ./docker/mysql/my.cnf:/etc/mysql/conf.d/99-overrides.cnf
-      - ./docker/mysql/db:/var/lib/mysql
-      - ./docker/mysql/bak/:/bak
-    ports:
-      - ${MYSQL_PORT}:3306
-    networks:
-      - common
-
 networks:
   common:
     external: true
