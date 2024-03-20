@@ -6,6 +6,7 @@
     <IndexMain class="screen-block" />
     <IndexNews class="screen-block top-block" />
     <IndexNewFaces class="screen-block top-block" />
+    <IndexSupestars class="screen-block top-block" />
   </div>
 </template>
 
