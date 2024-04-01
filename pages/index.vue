@@ -7,7 +7,8 @@
     <IndexNews class="screen-block top-block" />
     <IndexNewFaces class="screen-block top-block" />
     <IndexSupestars class="screen-block top-block" />
-    <Footer class="screen-block top-block" />
+    <IndexInstagram class="screen-block top-block" />
+    <Footer class="screen-block" />
   </div>
 </template>
 
