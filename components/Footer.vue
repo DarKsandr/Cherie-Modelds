@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import MailIcon from '~/assets/svg/mail.svg';
 import VKIcon from '~/assets/svg/vk.svg';
-import instagramIcon from '~/assets/svg/instagram-2.svg';
-import telegramIcon from '~/assets/svg/telegram.svg';
+import InstagramIcon from '~/assets/svg/instagram-2.svg';
+import TelegramIcon from '~/assets/svg/telegram.svg';
 
 const icons = [
   { src: MailIcon, alt: 'mail' },
   { src: VKIcon, alt: 'vk' },
-  { src: instagramIcon, alt: 'instagram' },
-  { src: telegramIcon, alt: 'telegram' },
+  { src: InstagramIcon, alt: 'instagram' },
+  { src: TelegramIcon, alt: 'telegram' },
 ];
 </script>
 
